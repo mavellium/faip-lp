@@ -5,7 +5,7 @@ import { useCallback } from "react";
 
 export default function Header() {
   // Função scroll suave
-  const smoothScrollTo = useCallback((targetY: number, duration = 600) => {
+  const lgoothScrollTo = useCallback((targetY: number, duration = 600) => {
     const startY = window.scrollY || window.pageYOffset;
     const distanceY = targetY - startY;
     let startTime: number | null = null;
@@ -38,12 +38,12 @@ export default function Header() {
     const el = document.getElementById("form");
     if (el) {
       const top = el.getBoundingClientRect().top + window.scrollY;
-      smoothScrollTo(top, 700);
+     lgoothScrollTo(top, 700);
     }
   };
 
   return (
-    <section className="relative w-full max-h-[105vh] min-h-[105vh] flex flex-col justify-start items-start overflow-hidden p-2 pt-6 pb-6 lg:pl-20">
+    <section className="relative w-full max-h-[105vh] h-full flex flex-col justify-start items-start overflow-hidden">
       {/* Vídeo de fundo */}
       <video
         autoPlay
@@ -63,16 +63,16 @@ export default function Header() {
         }}
       ></div>
 
-      {/* Logos e conteúdo */}
-      <div className="flex gap-18 sm:gap-10 w-auto flex-col relative z-30 ">
-        <div className="flex gap-10 sm:justify-start justify-center">
+      {/* Logos e conteúdo */}\\
+      <div className="flex gap-18 lg:gap-10 w-full lg:w-auto flex-col relative z-30 p-2 pt-6 pb-6 lg:pl-20">
+        <div className="flex gap-10 lg:justify-start justify-center">
         <Image
           src="/faip-logo.png"
           alt="Logo FAIP Marília"
           width={102}
           height={50}
           priority
-          className="w-[70px] sm:w-[102px] h-auto sm:h-[50px]"
+          className="w-[100px] lg:w-[102px] h-auto lg:h-[50px]"
         />
 
         <Image
@@ -81,32 +81,32 @@ export default function Header() {
           width={200}
           height={50}
           priority
-          className="w-[150px] sm:w-[200px] h-auto sm:h-[50px]"
+          className="w-[180px] lg:w-[200px] h-auto lg:h-[50px]"
         />
         </div>
 
         {/* Texto e botão */}
-        <div className="flex flex-col items-center sm:items-start text-center sm:text-start">
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold max-w-full sm:max-w-md text-white drop-shadow-lg">
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-start">
+          <h1 className="text-xl lg:text-2xl md:text-3xl font-bold max-w-full lg:max-w-md text-white drop-shadow-lg">
             Faça sua matrícula e garanta bolsa de até
           </h1>
 
-          <h1 className="flex items-baseline text-[150px] sm:text-[100px] md:text-[200px] font-bold mt-2 leading-none text-white drop-shadow-lg">
+          <h1 className="flex items-baseline text-[150px] lg:text-[100px] lg:text-[200px] font-bold mt-2 leading-none text-white drop-shadow-lg">
             60
-            <span className="text-[40px] sm:text-[50px] md:text-[50px] ml-2">%</span>
+            <span className="text-[40px] lg:text-[50px] md:text-[50px] ml-2">%</span>
           </h1>
 
-          <h2 className="text-base sm:text-lg md:text-xl font-bold max-w-full sm:max-w-lg mb-4 text-white drop-shadow-lg">
+          <h2 className="text-base lg:text-lg md:text-xl font-bold max-w-full lg:max-w-lg mb-4 text-white drop-shadow-lg">
             e comece o ano garantindo seu sonho de ter o seu diploma!
           </h2>
 
-          <h3 className="text-sm sm:text-base md:text-base mb-6 text-white drop-shadow-lg">
+          <h3 className="text lg:text-base md:text-base mb-6 text-white drop-shadow-lg">
             Cursos 100% presenciais desde o 1° Semestre!
           </h3>
 
           {/* Link com handler de scroll suave */}
           <a href="#form" onClick={handleClick}>
-            <button className="bg-white border-2 border-[#045C3A] text-[#045C3A] cursor-pointer rounded-full h-12 px-6 font-semibold shadow-lg shadow-green-500/40 backdrop-blur-sm transition-all duration-300 hover:bg-[#045C3A] hover:text-white transform hover:-translate-y-1">
+            <button className="bg-white border-2 border-[#045C3A] text-[#045C3A] cursor-pointer rounded-full h-12 px-6 font-semibold shadow-lg shadow-green-500/40 backdrop-blur lg transition-all duration-300 hover:bg-[#045C3A] hover:text-white transform hover:-translate-y-1">
               FAZER MINHA MATRÍCULA AGORA
             </button>
           </a>
