@@ -55,7 +55,7 @@ export default function Footer() {
                 </g>
                 <path d="M406.844 204.095H395.419V136.742H406.844L428.59 190.366L450.335 136.742H461.944V204.095H450.519V183.364C450.519 169.819 450.519 165.857 451.164 161.066L434.026 204.095H423.153L406.107 161.158C406.752 165.212 406.844 171.57 406.844 179.954V204.095ZM486.342 204.095H474.087L498.412 136.742H510.483L534.808 204.095H522.369L516.933 188.523H491.778L486.342 204.095ZM502.927 156.828L495.28 178.572H513.523L505.784 156.828C505.231 155.077 504.586 153.05 504.401 151.668C504.125 152.958 503.572 154.985 502.927 156.828ZM556.02 204.095L530.59 136.742H543.121L557.863 175.532C559.337 179.586 560.627 183.548 562.102 188.984C563.76 183.087 565.142 178.941 566.432 175.532L580.99 136.742H593.245L568.183 204.095H556.02ZM647.165 204.095H605.333V136.742H647.165V147.614H617.127V164.936H644.032V175.348H617.127V193.222H647.165V204.095ZM675.431 136.742V193.222H703.626V204.095H663.637V136.742H675.431ZM728.697 136.742V193.222H756.892V204.095H716.903V136.742H728.697ZM781.962 136.742V204.095H770.168V136.742H781.962ZM800.117 179.494V136.742H811.911V178.757C811.911 188.431 817.163 193.775 826.746 193.775C836.328 193.775 841.672 188.339 841.672 178.757V136.742H853.466V179.494C853.466 195.249 843.147 205.2 826.746 205.2C810.437 205.2 800.117 195.341 800.117 179.494ZM883.085 204.095H871.659V136.742H883.085L904.83 190.366L926.575 136.742H938.185V204.095H926.759V183.364C926.759 169.819 926.759 165.857 927.404 161.066L910.266 204.095H899.393L882.348 161.158C882.992 165.212 883.085 171.57 883.085 179.954V204.095Z" fill="white"/>
                 <defs>
-                <filter id="filter0_d_55_23" x="54" y="34" width="292.419" height="281.942" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <filter id="filter0_d_55_23" x="54" y="34" width="292.419" height="281.942" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                 <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                 <feOffset dy="4"/>
@@ -66,40 +66,40 @@ export default function Footer() {
                 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_55_23" result="shape"/>
                 </filter>
                 <linearGradient id="paint0_linear_55_23" x1="115.918" y1="294.625" x2="248.409" y2="167.466" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#057A5D"/>
-                <stop offset="1" stop-color="#006C49"/>
+                <stop stopColor="#057A5D"/>
+                <stop offset="1" stopColor="#006C49"/>
                 </linearGradient>
                 <linearGradient id="paint1_linear_55_23" x1="120.364" y1="130.123" x2="255.523" y2="248.39" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#04A15E"/>
-                <stop offset="1" stop-color="#013B22"/>
+                <stop stopColor="#04A15E"/>
+                <stop offset="1" stopColor="#013B22"/>
                 </linearGradient>
                 <linearGradient id="paint2_linear_55_23" x1="120.364" y1="130.123" x2="255.523" y2="248.39" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#04A15E"/>
-                <stop offset="1" stop-color="#013B22"/>
+                <stop stopColor="#04A15E"/>
+                <stop offset="1" stopColor="#013B22"/>
                 </linearGradient>
                 <linearGradient id="paint3_linear_55_23" x1="151.487" y1="311.52" x2="269.75" y2="189.695" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#057A5D"/>
-                <stop offset="1" stop-color="#006C49"/>
+                <stop stopColor="#057A5D"/>
+                <stop offset="1" stopColor="#006C49"/>
                 </linearGradient>
                 <linearGradient id="paint4_linear_55_23" x1="115.918" y1="294.625" x2="248.409" y2="167.465" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#057A5D"/>
-                <stop offset="1" stop-color="#006C49"/>
+                <stop stopColor="#057A5D"/>
+                <stop offset="1" stopColor="#006C49"/>
                 </linearGradient>
                 <linearGradient id="paint5_linear_55_23" x1="120.364" y1="130.123" x2="255.523" y2="248.39" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#04A15E"/>
-                <stop offset="1" stop-color="#013B22"/>
+                <stop stopColor="#04A15E"/>
+                <stop offset="1" stopColor="#013B22"/>
                 </linearGradient>
                 <linearGradient id="paint6_linear_55_23" x1="120.364" y1="130.123" x2="255.523" y2="248.39" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#04A15E"/>
-                <stop offset="1" stop-color="#013B22"/>
+                <stop stopColor="#04A15E"/>
+                <stop offset="1" stopColor="#013B22"/>
                 </linearGradient>
                 <linearGradient id="paint7_linear_55_23" x1="151.487" y1="311.52" x2="269.75" y2="189.695" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#057A5D"/>
-                <stop offset="1" stop-color="#006C49"/>
+                <stop stopColor="#057A5D"/>
+                <stop offset="1" stopColor="#006C49"/>
                 </linearGradient>
                 <linearGradient id="paint8_linear_55_23" x1="115.918" y1="294.625" x2="248.409" y2="167.465" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#057A5D"/>
-                <stop offset="1" stop-color="#006C49"/>
+                <stop stopColor="#057A5D"/>
+                <stop offset="1" stopColor="#006C49"/>
                 </linearGradient>
                 </defs>
                 </svg>

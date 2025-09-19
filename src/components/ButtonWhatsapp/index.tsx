@@ -4,7 +4,7 @@ export default function ButtonWhatsapp() {
             href="https://wa.me/5514996007788?text=Ol%C3%A1%21+Vi+a+campanha+da+FAIP+com+at%C3%A9+60%25+de+desconto+e+quero+mais+informa%C3%A7%C3%B5es."
             target="_blank"
             aria-label="Conversar via WhatsApp com a FAIP"
-            className="fixed right-[30px] bottom-[30px] sm:w-[70px] sm:h-[70px] sm:p-3 w-[50px] h-[50px] p-2 bg-gradient-whatsapp rounded-full flex justify-center items-center border-[2px] border-[#1F9939] z-[100] 
+            className="fixed right-[30px] bottom-[30px] sm:w-[85px] sm:h-[85px] sm:p-3 w-[50px] h-[50px] p-2 bg-gradient-whatsapp rounded-full flex justify-center items-center border-[2px] border-[#1F9939] z-[100] 
                        transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-green-500/50 animate-pulse"
         >
             <svg
