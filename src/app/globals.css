@@ -39,6 +39,6 @@ html {
 
 @media screen and (max-width: 769px){
   .degrade{
-    background: rgba(3, 22, 1, 0.8) !important;
+    background: rgba(3, 22, 1, 0.6) !important;
   }
 }
