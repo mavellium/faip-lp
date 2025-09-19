@@ -3,7 +3,7 @@
 export default function Form() {
     return (
         <>
-            <section className="relative h-screen flex justify-center items-center text-center overflow-hidden">
+            <section id="form" className="relative h-screen flex justify-center items-center text-center overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-full z-0">
                     <img
                         src="/faip-bg.png"
