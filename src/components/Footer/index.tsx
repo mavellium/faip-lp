@@ -6,7 +6,7 @@ export default function Footer() {
 
 
       {/* Bloco inferior */}
-      <div className="bg-[#012C00] text-[#DEDEDE] py-[50px] border-t border-[#F0F0F0] text-base">
+      <div className="bg-[#012C00] text-[#DEDEDE] py-[50px] text-base">
         <div className="container flex mx-auto px-5 items-center">
           {/* Centro: Logo + direitos (centralizados em relação ao container) */}
           <div className="flex flex-col justify-self-center items-center text-center w-full">

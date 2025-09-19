@@ -9,7 +9,9 @@ export default function Banner() {
           <img
             src="/banner.jpeg"
             alt="FAIP"
-            className="w-full h-full object-cover cursor-pointer"
+            className="w-full h-full object-fill xl:object-cover cursor-pointer"
+            srcSet="/banner-mb.png 800w, /banner.jpeg 1200w"
+            sizes="(max-width: 600px) 100vw, 1200px"
           />
         </a>
       </div>
