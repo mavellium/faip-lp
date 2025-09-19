@@ -35,3 +35,10 @@ html {
 .bg-gradient-whatsapp{
   background: var(--gradient-whatsapp);
 }
+
+
+@media screen and (max-width: 769px){
+  .degrade{
+    background-color: rgba(3, 22, 1, 0.8) !important;
+  }
+}

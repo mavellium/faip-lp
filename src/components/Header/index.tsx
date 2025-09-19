@@ -43,7 +43,7 @@ export default function Header() {
   };
 
   return (
-    <section className="relative w-full max-h-[105vh] min-h-[105vh] flex flex-col justify-start items-start overflow-hidden p-10 pt-6 pb-6 lg:pl-20">
+    <section className="relative w-full max-h-[105vh] min-h-[105vh] flex flex-col justify-start items-start overflow-hidden p-2 pt-6 pb-6 lg:pl-20">
       {/* Vídeo de fundo */}
       <video
         autoPlay
@@ -57,34 +57,36 @@ export default function Header() {
 
       {/* Overlay degradê vertical */}
       <div
-        className="absolute top-0 left-0 w-full h-full z-20 pointer-events-none"
-        style={{
+        className="absolute top-0 left-0 w-full h-full z-20 pointer-events-none degrade"         style={{
           background:
             "linear-gradient(to right,rgba(10,28,10,0.9), rgba(10,28,10,0.9), rgba(0,0,0,0))",
         }}
       ></div>
 
       {/* Logos e conteúdo */}
-      <div className="flex gap-8 sm:gap-10 w-auto flex-col relative z-30 ">
-        <div className="flex gap-10">
-          <Image
-            src="/faip-logo.png"
-            alt="Logo FAIP Marília"
-            width={102}
-            height={50}
-            priority
-          />
-          <Image
-            src="/unigrupofaef-logo.svg"
-            alt="Logo FAIP Marília"
-            width={200}
-            height={50}
-            priority
-          />
+      <div className="flex gap-18 sm:gap-10 w-auto flex-col relative z-30 ">
+        <div className="flex gap-10 sm:justify-start justify-center">
+        <Image
+          src="/faip-logo.png"
+          alt="Logo FAIP Marília"
+          width={102}
+          height={50}
+          priority
+          className="w-[70px] sm:w-[102px] h-auto sm:h-[50px]"
+        />
+
+        <Image
+          src="/unigrupofaef-logo.svg"
+          alt="Logo FAIP Marília"
+          width={200}
+          height={50}
+          priority
+          className="w-[150px] sm:w-[200px] h-auto sm:h-[50px]"
+        />
         </div>
 
         {/* Texto e botão */}
-        <div className="flex flex-col items-start sm:items-start">
+        <div className="flex flex-col items-center sm:items-start text-center sm:text-start">
           <h1 className="text-xl sm:text-2xl md:text-3xl font-bold max-w-full sm:max-w-md text-white drop-shadow-lg">
             Faça sua matrícula e garanta bolsa de até
           </h1>
