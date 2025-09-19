@@ -1,10 +1,49 @@
 "use client";
 
 import Image from "next/image";
+import { useCallback } from "react";
 
 export default function Header() {
+  // Função scroll suave
+  const smoothScrollTo = useCallback((targetY: number, duration = 600) => {
+    const startY = window.scrollY || window.pageYOffset;
+    const distanceY = targetY - startY;
+    let startTime: number | null = null;
+
+    function animation(currentTime: number) {
+      if (!startTime) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+
+      const easeInOutQuad = (t: number, b: number, c: number, d: number) => {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      };
+
+      const nextScrollY = easeInOutQuad(timeElapsed, startY, distanceY, duration);
+      window.scrollTo(0, nextScrollY);
+
+      if (timeElapsed < duration) {
+        requestAnimationFrame(animation);
+      }
+    }
+
+    requestAnimationFrame(animation);
+  }, []);
+
+  // Handler para clique no botão
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const el = document.getElementById("form");
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.scrollY;
+      smoothScrollTo(top, 700);
+    }
+  };
+
   return (
-    <section className="relative w-full max-h-[105vh] min-h-[105vh] flex flex-col justify-start items-start overflow-hidden p-10  pt-6 pb-6 lg:pl-20">
+    <section className="relative w-full max-h-[105vh] min-h-[105vh] flex flex-col justify-start items-start overflow-hidden p-10 pt-6 pb-6 lg:pl-20">
       {/* Vídeo de fundo */}
       <video
         autoPlay
@@ -62,10 +101,12 @@ export default function Header() {
           <h3 className="text-sm sm:text-base md:text-base mb-6 text-white drop-shadow-lg">
             Cursos 100% presenciais desde o 1° Semestre!
           </h3>
-          <a href="#form">
-          <button className="bg-white border-2 border-[#045C3A] text-[#045C3A] cursor-pointer rounded-full h-12 px-6 font-semibold shadow-lg shadow-green-500/40 backdrop-blur-sm transition-all duration-300 hover:bg-[#045C3A] hover:text-white transform hover:-translate-y-1">
-            FAZER MINHA MATRÍCULA AGORA
-          </button>
+
+          {/* Link com handler de scroll suave */}
+          <a href="#form" onClick={handleClick}>
+            <button className="bg-white border-2 border-[#045C3A] text-[#045C3A] cursor-pointer rounded-full h-12 px-6 font-semibold shadow-lg shadow-green-500/40 backdrop-blur-sm transition-all duration-300 hover:bg-[#045C3A] hover:text-white transform hover:-translate-y-1">
+              FAZER MINHA MATRÍCULA AGORA
+            </button>
           </a>
         </div>
       </div>
