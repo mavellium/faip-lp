@@ -12,9 +12,6 @@ const schema = z.object({
     .regex(/^\+?\d{8,15}$/, "Número de WhatsApp inválido."),
   email: z.string().min(1, "Por favor, informe seu e-mail.").email("E-mail inválido."),
   curso: z.string().min(1, "Por favor, selecione um curso."),
-  termos: z.literal(true, {
-    errorMap: () => ({ message: "Você deve aceitar os termos para continuar." }),
-  }),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -131,7 +128,6 @@ export default function Form() {
 
           <div className="flex gap-4 mt-5 items-center">
             <input
-              {...register("termos",)}
               type="checkbox"
               id="termos"
               className="accent-green-600 w-4 h-4"
@@ -143,9 +139,6 @@ export default function Form() {
               Aceito os termos de uso e a política de privacidade.
             </label>
           </div>
-          {errors.termos && (
-            <p className="text-red-500 text-sm mt-1">Você deve aceitar os termos para continuar.</p>
-          )}
 
           <button
             type="submit"
