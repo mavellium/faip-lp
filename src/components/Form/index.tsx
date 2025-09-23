@@ -78,7 +78,7 @@ export default function Form() {
               </optgroup>
             </select>
             <button className="bg-[#028401] border border-[#3AEE0D] text-white rounded-md mt-6 h-12 font-semibold hover:bg-[#02a501] transition">
-              GARANTIR MINHA MATRÍCULA
+              GARANTIR MINHA BOLSA AGORA
             </button>
           </div>
         </div>
