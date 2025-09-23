@@ -11,9 +11,8 @@ export default function Form() {
         <img
           src="/faip-bg.png"
           alt="FAIP"
-          className="w-full h-full object-cover grayscale-[80%]"
+          className="w-full h-full"
         />
-        <div className="absolute top-0 left-0 w-full h-full bg-[#012C00]/90"></div>
       </div>
 
       {/* Conteúdo */}
@@ -22,7 +21,7 @@ export default function Form() {
         <div className="font-bold text-white flex flex-col items-center lg:items-center">
           <h1 className="text-3xl sm:text-4xl">100% PRESENCIAL</h1>
           <h1 className="text-4xl sm:text-5xl">100% FAIP</h1>
-          <h1 className="text-3xl sm:text-4xl">100% VOCÊ!</h1>
+          <h1 className="text-2xl sm:text-3xl">100% VOCÊ!</h1>
           <img
             src="selo-mec.png"
             alt="Selo MEC"

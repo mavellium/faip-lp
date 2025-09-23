@@ -50,10 +50,10 @@ export default function Banner() {
       <div className="relative top-0 left-0 w-full h-full z-0">
         <a href="#form" onClick={handleClick}>
           <img
-            src="/banner.jpeg"
+            src="/banner.png"
             alt="FAIP"
-            className="w-full h-auto sm:h-full object-fill xl:object-cover cursor-pointer"
-            srcSet="/banner-mb.png 800w, /banner.jpeg 1200w"
+            className="w-full h-auto sm:h-full cursor-pointer"
+            srcSet="/banner-mb.png 800w, /banner.png 1200w"
             sizes="(max-width: 600px) 100vw, 1200px"
           />
         </a>

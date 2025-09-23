@@ -59,7 +59,7 @@ export default function Header() {
       <div
         className="absolute top-0 left-0 w-full h-full z-20 pointer-events-none degrade"         style={{
           background:
-            "linear-gradient(to right,rgba(10,28,10,0.9), rgba(10,28,10,0.9), rgba(0,0,0,0))",
+            "linear-gradient(to right,rgba(0,104,0,0.9), rgba(0,104,0,0.9), rgba(0,0,0,0))",
         }}
       ></div>
 
@@ -86,7 +86,7 @@ export default function Header() {
         </div>
 
         {/* Texto e botão */}
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-start">
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-start lg:w-[23em]">
           <h1 className="text-xl lg:text-2xl md:text-3xl font-bold max-w-full lg:max-w-md text-white drop-shadow-lg">
             Faça sua matrícula e garanta bolsa de até
           </h1>
@@ -106,8 +106,8 @@ export default function Header() {
 
           {/* Link com handler de scroll suave */}
           <a href="#form" onClick={handleClick}>
-            <button className="bg-white border-2 border-[#045C3A] text-[#045C3A] cursor-pointer rounded-full h-12 px-6 font-semibold shadow-lg shadow-green-500/40 backdrop-blur lg transition-all duration-300 hover:bg-[#045C3A] hover:text-white transform hover:-translate-y-1">
-              FAZER MINHA MATRÍCULA AGORA
+            <button className="bg-white border-2 border-[#045C3A] text-[#045C3A] cursor-pointer rounded-[12px] h-12 px-6 font-semibold shadow-lg shadow-green-500/40 backdrop-blur lg transition-all duration-300 hover:bg-[#045C3A] hover:text-white transform hover:-translate-y-1">
+              QUERO MEU DESCONTO AGORA
             </button>
           </a>
         </div>

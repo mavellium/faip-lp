@@ -27,10 +27,9 @@ export default function Footer() {
                 />
             </div>
             <p className="text-lg mt-5 font-medium justify-center items-center flex-col sm:flex-row">
-              &copy; 2025 Centro Universitário UNIGRUPOFAEF Maríia SP. Todos os direitos reservados.</p>
+              &copy; 2025 Centro Universitário FAIP/UNIGRUPOFAEF Marília SP. </p>
+              <p> Todos os direitos reservados.</p>
               <a
-              
-              href="https://mavellium.com.br"
               target="_blank"
               rel="noopener noreferrer"
               className="flex text-lg font-medium justify-center items-center flex-nowrap sm:flex-row"
