@@ -107,7 +107,7 @@ export default function Header() {
           {/* Link com handler de scroll suave */}
           <a href="#form" onClick={handleClick}>
             <button className="bg-white border-2 border-[#045C3A] text-[#045C3A] cursor-pointer rounded-[12px] h-12 px-6 font-semibold shadow-lg shadow-green-500/40 backdrop-blur lg transition-all duration-300 hover:bg-[#045C3A] hover:text-white transform hover:-translate-y-1">
-              QUERO MEU DESCONTO AGORA
+              QUERO MINHA BOLSA AGORA
             </button>
           </a>
         </div>
