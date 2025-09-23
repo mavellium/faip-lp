@@ -145,7 +145,7 @@ export default function Form() {
             disabled={isSubmitting}
             className="bg-[#028401] border border-[#3AEE0D] text-white rounded-md mt-6 h-12 font-semibold hover:bg-[#02a501] transition disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            GARANTIR SUA BOLSA AGORA
+            GARANTA SUA BOLSA AGORA
           </button>
         </form>
       </div>
