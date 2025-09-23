@@ -86,7 +86,7 @@ export default function Header() {
         </div>
 
         {/* Texto e botão */}
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-start lg:w-[23em]">
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-start lg:w-[22.1em]">
           <h1 className="text-xl lg:text-2xl md:text-3xl font-bold max-w-full lg:max-w-md text-white drop-shadow-lg">
             Faça sua matrícula e garanta bolsa de até
           </h1>
