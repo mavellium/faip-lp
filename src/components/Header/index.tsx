@@ -59,7 +59,7 @@ export default function Header() {
       <div
         className="absolute top-0 left-0 w-full h-full z-20 pointer-events-none degrade"         style={{
           background:
-            "linear-gradient(to right,rgba(0,104,0,0.9), rgba(0,104,0,0.9), rgba(0,0,0,0))",
+            "linear-gradient(to right,rgba(0,104,0,0.6), rgba(0,104,0,0.6), rgba(0,0,0,0))",
         }}
       ></div>
 
