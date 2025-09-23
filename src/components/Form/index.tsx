@@ -126,7 +126,7 @@ export default function Form() {
             <p className="text-red-500 text-sm mt-1">{errors.curso.message}</p>
           )}
 
-          <div className="flex gap-4 mt-5 items-center">
+          <div className="flex gap-4 mt-5 items-start">
             <input
               type="checkbox"
               id="termos"
@@ -134,7 +134,7 @@ export default function Form() {
             />
             <label
               htmlFor="termos"
-              className="text-white text-sm select-none cursor-pointer"
+              className="text-white text-sm select-none cursor-pointer text-start items-start"
             >
               Aceito os termos de uso e a política de privacidade.
             </label>
@@ -145,7 +145,7 @@ export default function Form() {
             disabled={isSubmitting}
             className="bg-[#028401] border border-[#3AEE0D] text-white rounded-md mt-6 h-12 font-semibold hover:bg-[#02a501] transition disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            GARANTIR MINHA BOLSA AGORA
+            GARANTIR SUA BOLSA AGORA
           </button>
         </form>
       </div>
