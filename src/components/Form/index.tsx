@@ -3,32 +3,39 @@
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-
-const schema = z.object({
-  nome: z.string().min(1, "Por favor, informe seu nome."),
-  whatsapp: z
-    .string()
-    .min(1, "Por favor, informe seu número de WhatsApp.")
-    .regex(/^\+?\d{8,15}$/, "Número de WhatsApp inválido."),
-  email: z.string().min(1, "Por favor, informe seu e-mail.").email("E-mail inválido."),
-  curso: z.string().min(1, "Por favor, selecione um curso."),
-});
-
-type FormData = z.infer<typeof schema>;
+import { useEffect } from 'react'
 
 export default function Form() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-  } = useForm<FormData>({
-    resolver: zodResolver(schema),
-  });
+  useEffect(() => {
+    const formContainer = document.getElementById('section-2-form')
+    if (!formContainer) return
 
-  const onSubmit = (data: FormData) => {
-    console.log("Dados do formulário:", data);
-    alert("Formulário enviado com sucesso!");
-  };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const scriptInline = document.createElement('script')
+          scriptInline.defer = true
+          scriptInline.textContent = `
+            !function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"1555567",hash:"499f2d47ec2957e6d203463ce10956e2",locale:"pt"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");
+          `
+
+          const scriptSrc = document.createElement('script')
+          scriptSrc.async = true
+          scriptSrc.charset = 'utf-8'
+          scriptSrc.src = 'https://forms.kommo.com/forms/assets/js/amoforms.js?1758651212'
+
+          formContainer.appendChild(scriptInline)
+          formContainer.appendChild(scriptSrc)
+
+          observer.unobserve(formContainer)
+        }
+      })
+    })
+
+    observer.observe(formContainer)
+
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <section
@@ -47,107 +54,12 @@ export default function Form() {
           <img src="selo-mec.png" alt="Selo MEC" className="mt-4" />
         </div>
 
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col w-full max-w-md sm:max-w-lg bg-black/65 rounded-xl p-6 sm:p-8"
-          noValidate
-        >
-          <input
-            {...register("nome")}
-            className={`bg-white text-black placeholder:text-[#353535] placeholder:pl-2 rounded-md h-12 ${
-              errors.nome ? "border border-red-500" : ""
-            }`}
-            type="text"
-            placeholder="Qual seu nome?"
-          />
-          {errors.nome && (
-            <p className="text-red-500 text-sm mt-1">{errors.nome.message}</p>
-          )}
-
-          <input
-            {...register("whatsapp")}
-            className={`bg-white text-black placeholder:text-[#353535] placeholder:pl-2 rounded-md mt-4 h-12 ${
-              errors.whatsapp ? "border border-red-500" : ""
-            }`}
-            type="text"
-            placeholder="Digite seu Número de WhatsApp"
-          />
-          {errors.whatsapp && (
-            <p className="text-red-500 text-sm mt-1">{errors.whatsapp.message}</p>
-          )}
-
-          <input
-            {...register("email")}
-            className={`bg-white text-black placeholder:text-[#353535] placeholder:pl-2 rounded-md mt-4 h-12 ${
-              errors.email ? "border border-red-500" : ""
-            }`}
-            type="email"
-            placeholder="Digite seu melhor e-mail"
-          />
-          {errors.email && (
-            <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
-          )}
-
-          <select
-            {...register("curso")}
-            className={`bg-white text-black rounded-md mt-4 h-12 px-2 ${
-              errors.curso ? "border border-red-500" : ""
-            }`}
-          >
-            <option value="">Selecione um curso</option>
-            <optgroup label="GRADUAÇÃO">
-              <option value="/cursos/administracao">Administração</option>
-              <option value="/cursos/arquitetureaurbanismo">
-                Arquitetura e Urbanismo
-              </option>
-              <option value="/cursos/biomedicina">Biomedicina</option>
-              <option value="/cursos/educacaofisica">Educação Física</option>
-              <option value="/cursos/enfermagem">
-                Enfermagem Diurno &amp; Noturno
-              </option>
-              <option value="/cursos/engenhariacivil">Engenharia Civil</option>
-              <option value="/cursos/engenhariaeletrica">
-                Engenharia Elétrica
-              </option>
-              <option value="/cursos/esteticacosmetica">
-                Estética &amp; Cosmética
-              </option>
-              <option value="/cursos/fisioterapia">Fisioterapia</option>
-              <option value="/cursos/gastronomia">Gastronomia</option>
-              <option value="/cursos/moda">Moda</option>
-              <option value="/cursos/nutricao">Nutrição</option>
-              <option value="/cursos/pedagogia">Pedagogia</option>
-              <option value="/cursos/producaopublicitaria">
-                Produção Publicitária
-              </option>
-            </optgroup>
-          </select>
-          {errors.curso && (
-            <p className="text-red-500 text-sm mt-1">{errors.curso.message}</p>
-          )}
-
-          <div className="flex gap-4 mt-5 items-start">
-            <input
-              type="checkbox"
-              id="termos"
-              className="accent-green-600 w-4 h-4"
-            />
-            <label
-              htmlFor="termos"
-              className="text-white text-sm select-none cursor-pointer text-start items-start"
-            >
-              Aceito os termos de uso e a política de privacidade.
-            </label>
-          </div>
-
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="bg-[#028401] border border-[#3AEE0D] text-white rounded-md mt-6 h-12 font-semibold hover:bg-[#02a501] transition disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            GARANTA SUA BOLSA AGORA
-          </button>
-        </form>
+        <div
+        id="section-2-form"
+        className="w-full max-w-[560px] rounded-[10px] px-3 sm:px-8 py-4 sm:py-10 h-full"
+      >
+        <noscript>Para visualizar o formulário, ative o JavaScript no seu navegador.</noscript>
+      </div>
       </div>
     </section>
   );
