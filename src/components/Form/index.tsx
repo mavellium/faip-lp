@@ -43,7 +43,7 @@ export default function Form() {
       id="form"
     >
       <div className="absolute top-0 left-0 w-full h-full z-0">
-        <img src="/faip-bg.png" alt="FAIP" className="w-full h-full" />
+        <img src="/faip-bg.png" alt="FAIP" className="w-full h-full absolute bottom-0 left-0 w-full h-full z-0" />
       </div>
 
       <div className="z-10 flex flex-col lg:flex-row gap-10 lg:gap-32 items-center justify-center w-full">

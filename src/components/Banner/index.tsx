@@ -47,8 +47,9 @@ export default function Banner() {
       {/* Imagem de fundo */}
       <img
         src="/banner-bg.png"
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        className="absolute bottom-0 left-0 w-full h-full z-0"
         alt=""
+        
       />
 
       <div className="relative flex flex-col sm:flex-row w-full max-w-7xl items-center justify-around z-10 gap-10">
