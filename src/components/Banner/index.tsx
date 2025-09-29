@@ -74,13 +74,13 @@ export default function Banner() {
 
           {/* Texto Responsivo */}
           <div className="w-full max-w-3xl font-bold flex flex-col justify-center items-center text-center text-white mt-6">
-            <span className="text-[36px] sm:text-[52px] md:text-[72px] lg:text-[90px] xl:text-[75px] leading-[1.1]">
+            <span className="text-[70px] sm:text-[50px] md:text-[68px] lg:text-[60px] xl:text-[75px] leading-[1.1]">
               Cursos 100%
             </span>
-            <span className="text-[40px] sm:text-[58px] md:text-[78px] lg:text-[96px] xl:text-[85px] leading-[1.1]">
+            <span className="text-[78px] sm:text-[58px] md:text-[78px] lg:text-[96px] xl:text-[85px] leading-[1.1]">
               Presenciais
             </span>
-            <span className="text-[24px] sm:text-[32px] md:text-[42px] lg:text-[52px] xl:text-[46px] leading-[1.1] mt-2">
+            <span className="text-[42px] sm:text-[31px] md:text-[42px] lg:text-[52px] xl:text-[46px] leading-[1.1] mt-2">
               Desde o 1° Semestre!
             </span>
           </div>
