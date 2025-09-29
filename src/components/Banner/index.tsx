@@ -3,7 +3,6 @@
 import { useCallback } from "react";
 
 export default function Banner() {
-  // Função de scroll suave
   const smoothScrollTo = useCallback((targetY: number, duration = 600) => {
     const startY = window.scrollY || window.pageYOffset;
     const distanceY = targetY - startY;
@@ -31,7 +30,6 @@ export default function Banner() {
     requestAnimationFrame(animation);
   }, []);
 
-  // Handler do clique no link
   const handleClick = useCallback(
     (e: React.MouseEvent<HTMLAnchorElement>) => {
       e.preventDefault();
@@ -45,48 +43,55 @@ export default function Banner() {
   );
 
   return (
-    <section className="relative w-full h-[125vh] min-h-[125vh] max-h-[125vh] sm:h-[125vh] sm:min-h-[135vh] sm:max-h-[125vh] flex flex-col justify-start items-start overflow-hidden">
+    <section className="relative w-full h-full min-h-screen flex flex-col justify-start items-center overflow-hidden px-4 py-10">
       {/* Imagem de fundo */}
       <img
         src="/banner-bg.png"
-        className="absolute top-0 left-0 w-full h-full object-cover z-1"
-        alt="" />
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        alt=""
+      />
 
-      <div className="flex flex-col w-full items-center justify-around sm:flex-row">
-        {/* Imagem */}
-        <div className="flex items-center m-25 z-10">
+      <div className="relative flex flex-col sm:flex-row w-full max-w-7xl items-center justify-around z-10 gap-10">
+        {/* Imagem principal */}
+        <div className="flex justify-center items-center">
           <a href="#form" onClick={handleClick}>
             <img
               src="/banner.png"
               alt="FAIP"
-              width={550}
-              className="cursor-pointer"
-              sizes="(max-width: 600px) 200vw, 1200px"
+              className="w-full max-w-[450px] cursor-pointer"
             />
           </a>
         </div>
 
-        <div className="flex items-center flex-col p-5 z-10">
+        {/* Conteúdo à direita */}
+        <div className="flex flex-col items-center text-center px-4">
           <img
             src="/vest-faip.png"
             alt="FAIP"
-            width={550}
-            className="cursor-pointer"
-            sizes="(max-width: 600px) 100vw, 1200px"
+            className="w-full max-w-[400px] mb-6"
           />
-          <div className="w-[35em] text-base/[110px] font-bold flex flex-col justify-center items-center text-center mt-10">
-            <span className="text-[98px]">Cursos 100%</span>
-            <span className="text-[108px]">Presenciais</span>
-            <span className="text-[58px]">Desde o 1° Semestre!</span>
-            </div>
-          <a href="#form" onClick={handleClick}>
-            <button className="bg-white border-2 border-[#045C3A] text-[#045C3A] cursor-pointer rounded-[12px] h-12 w-[33em] px-6 font-semibold shadow-lg shadow-green-500/40 backdrop-blur lg transition-all duration-300 hover:bg-[#045C3A] hover:text-white transform hover:-translate-y-1">
+
+          {/* Texto Responsivo */}
+          <div className="w-full max-w-3xl font-bold flex flex-col justify-center items-center text-center text-white mt-6">
+            <span className="text-[36px] sm:text-[52px] md:text-[72px] lg:text-[90px] xl:text-[75px] leading-[1.1]">
+              Cursos 100%
+            </span>
+            <span className="text-[40px] sm:text-[58px] md:text-[78px] lg:text-[96px] xl:text-[85px] leading-[1.1]">
+              Presenciais
+            </span>
+            <span className="text-[24px] sm:text-[32px] md:text-[42px] lg:text-[52px] xl:text-[46px] leading-[1.1] mt-2">
+              Desde o 1° Semestre!
+            </span>
+          </div>
+
+          {/* Botão */}
+          <a href="#form" onClick={handleClick} className="mt-8 w-full flex justify-center">
+            <button className="bg-[#003000] border-1 border-[#3AEE0D] text-white cursor-pointer rounded-[12px] h-12 w-full max-w-[500px] px-6 font-semibold shadow-lg shadow-green-500/40 backdrop-blur-lg transition-all duration-300 hover:bg-[#01832A] hover:text-white transform hover:-translate-y-1">
               QUERO MINHA BOLSA!
             </button>
           </a>
         </div>
       </div>
-
     </section>
   );
 }

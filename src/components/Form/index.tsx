@@ -56,7 +56,7 @@ export default function Form() {
 
         <div
         id="section-2-form"
-        className="w-full max-w-[560px] rounded-[10px] px-3 sm:px-8 py-4 sm:py-10 h-full"
+        className="w-full max-w-[560px] rounded-[10px] px-3 sm:px-8 py-4 sm:py-10 h-full flex justify-center"
       >
         <noscript>Para visualizar o formulário, ative o JavaScript no seu navegador.</noscript>
       </div>
