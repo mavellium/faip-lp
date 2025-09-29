@@ -63,8 +63,8 @@ export default function Header() {
         }}
       ></div>
 
-      {/* Logos e conteúdo */}\\
-      <div className="flex gap-18 lg:gap-10 w-full lg:w-auto flex-col relative z-30 p-2 pt-6 pb-6 lg:pl-20">
+      {/* Logos e conteúdo */}
+      <div className="flex gap-18 lg:gap-7 w-full lg:w-auto flex-col relative z-30 p-2 pt-6 pb-6 lg:pl-20">
         <div className="flex gap-10 lg:justify-start justify-center">
         <Image
           src="/faip-logo.png"
@@ -92,7 +92,7 @@ export default function Header() {
             e garanta bolsa de até
           </h1>
 
-          <span className="flex items-baseline text-[150px] lg:text-[220px] w-full justify-center font-bold mt-2 leading-none text-white drop-shadow-lg">
+          <span className="flex items-baseline text-[150px] lg:text-[220px] w-full justify-center font-bold mt-2 leading-none text-white drop-shadow-lg h-[190px]">
             60
             <span className="text-[40px] lg:text-[80px] md:text-[50px] ml-2">%</span>
           </span>
