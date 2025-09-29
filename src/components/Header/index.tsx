@@ -86,27 +86,29 @@ export default function Header() {
         </div>
 
         {/* Texto e botão */}
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-start lg:w-[22.1em]">
-          <h1 className="text-xl lg:text-2xl md:text-3xl font-bold max-w-full lg:max-w-md text-white drop-shadow-lg">
-            Faça sua matrícula e garanta bolsa de até
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-start lg:w-[22em]">
+          <h1 className="text-xl lg:text-[30px] md:text-3xl font-bold max-w-full lg:max-w-md text-white drop-shadow-lg">
+            <span className="lg:text-[42px] md:text-3xl font-bold">Faça sua matrícula </span>
+            e garanta bolsa de até
           </h1>
 
-          <h1 className="flex items-baseline text-[150px] lg:text-[100px] lg:text-[200px] font-bold mt-2 leading-none text-white drop-shadow-lg">
+          <span className="flex items-baseline text-[150px] lg:text-[220px] w-full justify-center font-bold mt-2 leading-none text-white drop-shadow-lg">
             60
-            <span className="text-[40px] lg:text-[50px] md:text-[50px] ml-2">%</span>
-          </h1>
+            <span className="text-[40px] lg:text-[80px] md:text-[50px] ml-2">%</span>
+          </span>
 
-          <h2 className="text-base lg:text-lg md:text-xl font-bold max-w-full lg:max-w-lg mb-4 text-white drop-shadow-lg">
-            e comece o ano garantindo seu sonho de ter o seu diploma!
+          <h2 className="text-base lg:text-[20.8px] md:text-xl font-bold max-w-full lg:max-w-lg mb-4 text-white drop-shadow-lg">
+            <span className="lg:text-[29.6px]">e comece o ano garantindo </span>
+            seu sonho de ter o seu diploma!
           </h2>
 
-          <h3 className="text lg:text-base md:text-base mb-6 text-white drop-shadow-lg">
+          <h3 className="text lg:text-[15.3px] md:text-base mb-6 text-white drop-shadow-lg">
             Cursos 100% presenciais desde o 1° Semestre!
           </h3>
 
           {/* Link com handler de scroll suave */}
           <a href="#form" onClick={handleClick}>
-            <button className="bg-white border-2 border-[#045C3A] text-[#045C3A] cursor-pointer rounded-[12px] h-12 px-6 font-semibold shadow-lg shadow-green-500/40 backdrop-blur lg transition-all duration-300 hover:bg-[#045C3A] hover:text-white transform hover:-translate-y-1">
+            <button className="bg-white border-2 border-[#045C3A] text-[#045C3A] cursor-pointer rounded-[12px] h-12 w-[21.5em] px-6 font-semibold shadow-lg shadow-green-500/40 backdrop-blur lg transition-all duration-300 hover:bg-[#045C3A] hover:text-white transform hover:-translate-y-1">
               QUERO MINHA BOLSA AGORA
             </button>
           </a>

@@ -27,7 +27,7 @@ export default function Footer() {
                 />
             </div>
             <p className="text-lg mt-5 font-medium justify-center items-center flex-col sm:flex-row">
-              &copy; 2025 Centro Universitário FAIP/UNIGRUPOFAEF Marília SP. </p>
+              &copy; 2025 Centro Universitário FAIP/UNIGRUPOFAEF de Marília/SP. </p>
               <p> Todos os direitos reservados.</p>
               <a
               target="_blank"
