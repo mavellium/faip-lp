@@ -46,7 +46,7 @@ export default function Banner() {
     <section className="relative w-full h-screen min-h-screen flex justify-center gap-[15%] items-center overflow-hidden">
       {/* Imagem de fundo */}
       <img
-        src="/banner-bg.png"
+        src="/banner-bg.jpg"
         className="absolute bottom-0 left-0 w-full h-full z-0"
         alt=""
 
