@@ -35,7 +35,7 @@ export default function Header() {
   // Handler para clique no botão
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    const el = document.getElementById("form");
+    const el = document.getElementById("section-2-form");
     if (el) {
       const top = el.getBoundingClientRect().top + window.scrollY;
      lgoothScrollTo(top, 700);

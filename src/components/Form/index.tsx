@@ -53,13 +53,13 @@ export default function Form() {
           <img
             src="selo-mec.png"  
             alt="Selo MEC"
-            className="mt-4 mb-20 md:mb-0 w-full lg:w-4/5"
+            className="mt-4 mb-20 lg:mb-0 w-full lg:w-4/5"
           />
         </div>
       </div>
 
 
-      <div id="section-2-form" className="flex justify-left z-10 w-full lg:w-1/2">
+      <div id="section-2-form" className="flex justify-center lg:justify-left z-10 w-full lg:w-1/2">
         <noscript>Para visualizar o formulário, ative o JavaScript no seu navegador.</noscript>
       </div>
     </section>

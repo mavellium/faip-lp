@@ -33,7 +33,7 @@ export default function Banner() {
   const handleClick = useCallback(
     (e: React.MouseEvent<HTMLAnchorElement>) => {
       e.preventDefault();
-      const el = document.getElementById("form");
+      const el = document.getElementById("section-2-form");
       if (el) {
         const top = el.getBoundingClientRect().top + window.scrollY;
         smoothScrollTo(top, 700);
