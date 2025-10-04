@@ -43,7 +43,7 @@ export default function Banner() {
   );
 
   return (
-    <section className="relative w-full min-h-screen flex justify-center gap-[15%] items-center overflow-hidden">
+    <section className="relative w-full min-h-screen flex justify-center gap-[15%] items-center overflow-hidden flex-col-reverse xl:flex-row pt-18 xl:pt-0">
       {/* Imagem de fundo */}
       <div className="absolute top-0 left-0 w-full h-full z-0">
       <img
@@ -52,7 +52,7 @@ export default function Banner() {
         alt=""
       />
       </div>
-        <div className="w-1/2 h-screen flex flex-col sm:flex-row justify-end z-10 gap-10 items-center">
+        <div className=" w-7/8 xl:w-1/2 xl:h-screen flex flex-col sm:flex-row justify-center xl:justify-end z-10 gap-10 items-center">
           {/* Imagem principal */}
           <img
                 src="/banner.png"
@@ -61,31 +61,31 @@ export default function Banner() {
               />
         </div>
 
-        <div className="w-1/2 flex flex-col sm:flex-row max-w-7xl z-10 gap-100">
+        <div className="w-7/8 xl:w-1/2 flex flex-col justify-center xl:justify-start sm:flex-row max-w-7xl z-10 gap-100">
           {/* Conteúdo à direita */}
           <div className="flex flex-col items-center text-center">
             <img
               src="/vest-faip.png"
               alt="FAIP"
-              className="w-full max-w-[400px] mb-6"
+              className="w-full max-w-[32rem] mb-6"
             />
 
             {/* Texto Responsivo */}
-            <div className="w-full max-w-3xl font-bold flex flex-col justify-center items-center text-center text-white mt-6">
-              <span className="text-[70px] sm:text-[50px] md:text-[68px] lg:text-[60px] xl:text-[75px] leading-[1.1]">
+            <div className="w-full max-w-3xl font-bold flex flex-col justify-center  items-center text-center text-white mt-6">
+              <span className="text-[clamp(1rem,15.7vw,5.6rem)] leading-[1.1]">
                 Cursos 100%
               </span>
-              <span className="text-[78px] sm:text-[58px] md:text-[78px] lg:text-[96px] xl:text-[85px] leading-[1.1]">
+              <span className="text-[clamp(2rem,18vw,6.5rem)] leading-[1.1]">
                 Presenciais
               </span>
-              <span className="text-[42px] sm:text-[31px] md:text-[42px] lg:text-[52px] xl:text-[46px] leading-[1.1] mt-2">
+              <span className="text-[clamp(1.5rem,9.8vw,3.53rem)] leading-[1.1] mt-2">
                 Desde o 1° Semestre!
               </span>
             </div>
 
             {/* Botão */}
             <a href="#form" onClick={handleClick} className="mt-8 w-full flex justify-center">
-              <button className="bg-[#003000] border-1 border-[#3AEE0D] text-white cursor-pointer rounded-[12px] h-12 w-full max-w-[500px] px-6 font-semibold shadow-lg shadow-green-500/40 backdrop-blur-lg transition-all duration-300 hover:bg-[#01832A] hover:text-white transform hover:-translate-y-1">
+              <button className="bg-[#003000] mb-18 xl:mb-0 border-1 border-[#3AEE0D] text-white cursor-pointer rounded-[12px] h-12 w-full max-w-[500px] px-6 font-semibold shadow-xl shadow-green-500/40 backdrop-blur-xl transition-all duration-300 hover:bg-[#01832A] hover:text-white transform hover:-translate-y-1">
                 QUERO MINHA BOLSA!
               </button>
             </a>

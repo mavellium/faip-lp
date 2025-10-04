@@ -36,30 +36,30 @@ export default function Form() {
 
   return (
     <section
-      className="relative w-full min-h-screen flex justify-between items-center gap-[15%] text-center overflow-hidden p-4 sm:p-10 flex-col lg:flex-row"
+      className="relative w-full min-h-screen flex justify-between items-center gap-[15%] text-center overflow-hidden p-4 sm:p-10 flex-col xl:flex-row"
       id="form"
     >
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <img src="/faip-bg.webp" alt="FAIP" className="w-full h-full absolute top-0 left-0 z-0" />
       </div>
 
-      {/* <div className="z-10 flex flex-col lg:flex-row gap-10 lg:gap-32 items-center justify-center w-1/2"> */}
+      {/* <div className="z-10 flex flex-col xl:flex-row gap-10 xl:gap-32 items-center justify-center w-1/2"> */}
 
-      <div className="w-full lg:w-1/2 lg:h-screen z-10 flex justify-center lg:justify-end items-center">
+      <div className="w-full xl:w-1/2 xl:h-screen z-10 flex justify-center xl:justify-end items-center">
         <div className="font-bold text-white flex flex-col items-center w-auto">
-          <h1 className="text-[clamp(1.4rem,9vw,3.8rem)] ">100% PRESENCIAL</h1>
+          <h1 className="text-[clamp(1.4rem,9vw,3.8rem)]">100% PRESENCIAL</h1>
           <h1 className="text-[clamp(2.1rem,14vw,6rem)]">100% FAIP</h1>
           <h1 className="text-[clamp(1.4rem,9.8vw,3.8rem)]">100% VOCÊ!</h1>
           <img
             src="selo-mec.png"  
             alt="Selo MEC"
-            className="mt-4 mb-20 lg:mb-0 w-full lg:w-4/5"
+            className="mt-4 mb-20 xl:mb-0 w-full xl:w-4/5"
           />
         </div>
       </div>
 
 
-      <div id="section-2-form" className="flex justify-center lg:justify-left z-10 w-full lg:w-1/2">
+      <div id="section-2-form" className="flex justify-center xl:justify-start z-10 w-full xl:w-1/2 pl-15">
         <noscript>Para visualizar o formulário, ative o JavaScript no seu navegador.</noscript>
       </div>
     </section>
