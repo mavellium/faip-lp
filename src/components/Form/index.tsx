@@ -47,9 +47,9 @@ export default function Form() {
 
       <div className="w-full lg:w-1/2 lg:h-screen z-10 flex justify-center lg:justify-end items-center">
         <div className="font-bold text-white flex flex-col items-center w-auto">
-          <h1 className="text-[clamp(1.4rem,6vw,3.8rem)] ">100% PRESENCIAL</h1>
-          <h1 className="text-[clamp(2.1rem,9vw,6rem)]">100% FAIP</h1>
-          <h1 className="text-[clamp(1.4rem,6vw,3rem)]">100% VOCÊ!</h1>
+          <h1 className="text-[clamp(1.4rem,9vw,3.8rem)] ">100% PRESENCIAL</h1>
+          <h1 className="text-[clamp(2.1rem,14vw,6rem)]">100% FAIP</h1>
+          <h1 className="text-[clamp(1.4rem,9.8vw,3.8rem)]">100% VOCÊ!</h1>
           <img
             src="selo-mec.png"  
             alt="Selo MEC"
