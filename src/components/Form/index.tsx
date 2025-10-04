@@ -59,7 +59,7 @@ export default function Form() {
       </div>
 
 
-      <div id="section-2-form" className="flex justify-center xl:justify-start z-10 w-full xl:w-1/2 pl-15">
+      <div id="section-2-form" className="flex justify-center xl:justify-start z-10 w-full xl:w-1/2 xl:pl-15">
         <noscript>Para visualizar o formulário, ative o JavaScript no seu navegador.</noscript>
       </div>
     </section>
