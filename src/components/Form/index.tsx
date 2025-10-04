@@ -1,8 +1,5 @@
 "use client";
 
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
 import { useEffect } from 'react'
 
 export default function Form() {
@@ -43,7 +40,7 @@ export default function Form() {
       id="form"
     >
       <div className="absolute top-0 left-0 w-full h-full z-0">
-        <img src="/faip-bg.png" alt="FAIP" className="w-full h-full absolute bottom-0 left-0 z-0" />
+        <img src="/faip-bg.webp" alt="FAIP" className="w-full h-full absolute top-0 left-0 z-0" />
       </div>
 
       {/* <div className="z-10 flex flex-col lg:flex-row gap-10 lg:gap-32 items-center justify-center w-1/2"> */}

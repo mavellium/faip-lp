@@ -43,14 +43,15 @@ export default function Banner() {
   );
 
   return (
-    <section className="relative w-full h-screen min-h-screen flex justify-center gap-[15%] items-center overflow-hidden">
+    <section className="relative w-full min-h-screen flex justify-center gap-[15%] items-center overflow-hidden">
       {/* Imagem de fundo */}
+      <div className="absolute top-0 left-0 w-full h-full z-0">
       <img
-        src="/banner-bg.jpg"
-        className="absolute bottom-0 left-0 w-full h-full z-0"
+        src="/banner-bg.webp"
+        className="w-full h-full absolute bottom-0 left-0 z-0"
         alt=""
-
       />
+      </div>
         <div className="w-1/2 h-screen flex flex-col sm:flex-row justify-end z-10 gap-10 items-center">
           {/* Imagem principal */}
           <img
