@@ -39,27 +39,31 @@ export default function Form() {
 
   return (
     <section
-      className="relative min-h-screen flex justify-center items-center text-center overflow-hidden p-6 sm:p-10"
+      className="relative w-full min-h-screen flex justify-between items-center gap-[15%] text-center overflow-hidden p-6 sm:p-10"
       id="form"
     >
       <div className="absolute top-0 left-0 w-full h-full z-0">
-        <img src="/faip-bg.png" alt="FAIP" className="w-full h-full absolute bottom-0 left-0 w-full h-full z-0" />
+        <img src="/faip-bg.png" alt="FAIP" className="w-full h-full absolute bottom-0 left-0 z-0" />
       </div>
 
-      <div className="z-10 flex flex-col lg:flex-row gap-10 lg:gap-32 items-center justify-center w-full">
-        <div className="font-bold text-white flex flex-col items-center lg:items-center">
-          <h1 className="text-3xl sm:text-4xl">100% PRESENCIAL</h1>
-          <h1 className="text-4xl sm:text-5xl">100% FAIP</h1>
-          <h1 className="text-2xl sm:text-3xl">100% VOCÊ!</h1>
-          <img src="selo-mec.png" alt="Selo MEC" className="mt-4" />
+      {/* <div className="z-10 flex flex-col lg:flex-row gap-10 lg:gap-32 items-center justify-center w-1/2"> */}
+
+      <div className="w-1/2 h-screen z-10 flex justify-end items-center">
+        <div className="font-bold text-white flex flex-col lg:items-center w-auto">
+          <h1 className="text-[clamp(1.5rem,6vw,3.5rem)]">100% PRESENCIAL</h1>
+          <h1 className="text-[clamp(2rem,8vw,4.5rem)]">100% FAIP</h1>
+          <h1 className="text-[clamp(1.25rem,4vw,2.5rem)]">100% VOCÊ!</h1>
+          <img
+            src="selo-mec.png"
+            alt="Selo MEC"
+            className="mt-4 w-4/5"
+          />
         </div>
-
-        <div
-        id="section-2-form"
-        className="w-full max-w-[560px] rounded-[10px] px-3 sm:px-8 py-4 sm:py-10 h-full flex justify-center"
-      >
-        <noscript>Para visualizar o formulário, ative o JavaScript no seu navegador.</noscript>
       </div>
+
+
+      <div id="section-2-form" className="flex justify-left z-10 w-1/2">
+        <noscript>Para visualizar o formulário, ative o JavaScript no seu navegador.</noscript>
       </div>
     </section>
   );
