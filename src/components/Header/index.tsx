@@ -43,7 +43,7 @@ export default function Header() {
   };
 
   return (
-    <section className="relative w-full h-[100vh] min-h-[100vh] max-h-[100vh] sm:h-[100vh] sm:min-h-[115vh] sm:max-h-[105vh] flex flex-col justify-start items-start overflow-hidden">
+    <section className="relative w-full h-screen min-h-screen max-h-screen sm:h-screen sm:min-h-[115vh] sm:max-h-[105vh] flex flex-col justify-start items-start overflow-hidden">
       {/* Vídeo de fundo */}
       <video
         autoPlay
