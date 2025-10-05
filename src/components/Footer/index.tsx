@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="flex flex-col justify-self-center items-center text-center w-full">
             <div className="flex gap-[32px] sm:flex-row flex-col justify-center items-center mb-8">
                 <Image
-                    src="/faip-logo.webp"
+                    src="/faip-logo.png"
                     alt="Logo FAIP Marília"
                     width={132}
                     height={50}
