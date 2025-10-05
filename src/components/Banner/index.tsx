@@ -48,7 +48,7 @@ export default function Banner() {
       <div className="absolute top-0 left-0 w-full h-full z-0">
       <img
         src="/banner-bg.webp"
-        className="w-full h-full absolute bottom-0 left-0 z-0"
+        className="w-full h-full absolute bottom-0 left-0 z-0 object-cover lg:object-contain"
         alt=""
       />
       </div>
