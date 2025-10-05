@@ -55,7 +55,7 @@ export default function Banner() {
         <div className=" w-7/8 xl:w-1/2 xl:h-screen flex flex-col sm:flex-row justify-center xl:justify-end z-10 gap-10 items-center">
           {/* Imagem principal */}
           <img
-                src="/banner.png"
+                src="/banner.webp"
                 alt="FAIP"
                 className="h-4/5"
               />
