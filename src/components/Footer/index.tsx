@@ -29,10 +29,8 @@ export default function Footer() {
             <p className="text-lg mt-5 font-medium justify-center items-center flex-col sm:flex-row">
               &copy; 2025 Centro Universitário FAIP/UNIGRUPOFAEF de Marília/SP. </p>
               <p> Todos os direitos reservados.</p>
-              <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex text-lg font-medium justify-center items-center flex-nowrap sm:flex-row"
+              <p
+              className="flex text-[1rem] font-medium justify-center items-center flex-nowrap sm:flex-row"
               title="Mavellium"
             >Desenvolvido por
               <svg width="130" height="40" viewBox="0 0 1003 342" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,7 +100,7 @@ export default function Footer() {
                 </linearGradient>
                 </defs>
                 </svg>
-            </a>
+            </p>
           </div>
         </div>
       </div>
