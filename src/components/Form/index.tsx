@@ -51,7 +51,7 @@ export default function Form() {
           <h1 className="text-[clamp(2.1rem,14vw,6rem)]">100% FAIP</h1>
           <h1 className="text-[clamp(1.4rem,9.8vw,3.8rem)]">100% VOCÊ!</h1>
           <img
-            src="selo-mec.png"  
+            src="selo-mec.webp"  
             alt="Selo MEC"
             className="mt-4 mb-20 xl:mb-0 w-full xl:w-4/5"
           />

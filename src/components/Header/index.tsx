@@ -67,7 +67,7 @@ export default function Header() {
       <div className="flex gap-18 md:gap-7 w-9/10 sm:w-3/4 xl:w-1/3 flex-col h-screen relative z-30 p-2 pt-6 pb-6 xl:pl-20" id="secao">
         <div className="flex gap-8 xl:gap-10 xl:justify-start justify-center">
         <Image
-          src="/faip-logo.png"
+          src="/faip-logo.webp"
           alt="Logo FAIP Marília"
           width={102}
           height={50}
