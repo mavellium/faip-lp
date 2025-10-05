@@ -130,7 +130,7 @@ html {
 
 
 
-@media (min-width: 200px) and (max-width:343) {
+@media (min-width: 230px) and (max-width:343) {
   #secao{
     width: 100vw;
   }
@@ -166,6 +166,46 @@ html {
   #button{
     font-size: 0.73rem;
     height: 3rem;
+    padding: 0 12px;
+  }
+}
+
+@media (min-width: 200px) and (max-width:230) {
+  #secao{
+    width: 100vw;
+  }
+
+  #h1_1{
+    font-size: 1.5rem;
+  }
+
+  #h1_2 {
+    font-size: 1.05rem;
+  }
+
+  #h2_1 {
+    font-size: 1.02rem;
+  }
+
+  #h2_2 {
+    font-size: 0.72rem;
+  }
+
+  #h3_60 {
+    font-size: 8rem;
+  }
+
+  #h3_porcentagem {
+    font-size: 3rem;
+  }
+
+  #h3_3 {
+    font-size: 0.53rem;
+  }
+
+  #button{
+    font-size: 0.67rem;
+    height: 2.3rem;
     padding: 0 12px;
   }
 }
