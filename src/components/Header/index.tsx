@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 export default function Header() {
 
@@ -41,19 +41,42 @@ export default function Header() {
       xloothScrollTo(top, 700);
     }
   };
+    const [isMobile, setIsMobile] = useState(false);
+    useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640); 
+    };
+
+    handleResize(); // Chamada inicial
+    window.addEventListener("resize", handleResize); 
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <section className="relative w-full h-screen xl:h-[50em] flex flex-col xl:justify-start justify-center items-center xl:items-start overflow-hidden">
 
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-10 animate-zoom-slow"
-      >
-        <source src="/video.mp4" type="video/mp4" />
-      </video>
+  {isMobile ? (
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="absolute top-0 left-0 w-full h-full object-cover z-10 animate-zoom-slow"
+    >
+      <source src="/video-mobile.mp4" type="video/mp4" />
+    </video>
+  ) : (
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="absolute top-0 left-0 w-full h-full object-cover z-10 animate-zoom-slow"
+    >
+      <source src="/video.mp4" type="video/mp4" />
+    </video>
+  )}
 
 
       <div
