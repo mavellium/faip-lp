@@ -13,16 +13,16 @@ export default function Footer() {
             <div className="flex gap-[32px] sm:flex-row flex-col justify-center items-center mb-8">
               <Image
                 src="/faip-logo.webp"
-                alt="Logo FAIP Marília"
-                width={132}
-                height={50}
+                alt="Logo da FAIP de Marília/SP"
+                width={166}
+                height={75}
                 priority
               />
               <Image
                 src="/unigrupofaef-logo.svg"
-                alt="Logo FAIP Marília"
-                width={250}
-                height={50}
+                alt="Logo da UnigrupoFAEF de Marília/SP"
+                width={1}
+                height={1}
                 priority
               />
             </div>

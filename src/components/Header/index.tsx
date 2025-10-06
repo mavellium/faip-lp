@@ -68,7 +68,7 @@ export default function Header() {
         <div className="flex gap-8 xl:gap-10 xl:justify-start justify-center">
           <Image
             src="/faip-logo.webp"
-            alt="Logo FAIP Marília"
+            alt="Logo da FAIP de Marília/SP"
             width={166}
             height={75}
             priority
@@ -78,7 +78,7 @@ export default function Header() {
 
           <Image
             src="/unigrupofaef-logo.svg"
-            alt="Logo FAIP Marília"
+            alt="Logo da UnigrupoFAEF de Marília/SP"
             width={1}
             height={1}
             priority
