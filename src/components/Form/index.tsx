@@ -49,9 +49,9 @@ export default function Form() {
 
       <div className="w-full xl:w-1/2 xl:h-screen z-10 flex justify-center xl:justify-end items-center">
         <div className="font-bold text-white flex flex-col items-center w-auto">
-          <h1 className="text-[clamp(1.4rem,9vw,3.8rem)]">100% PRESENCIAL</h1>
-          <h1 className="text-[clamp(2.1rem,14vw,6rem)]">100% FAIP</h1>
-          <h1 className="text-[clamp(1.4rem,9.8vw,3.8rem)]">100% VOCÊ!</h1>
+          <h1 className="text-[clamp(1.4rem,9vw,3.8rem)]" id="laptop">100% PRESENCIAL</h1>
+          <h1 className="text-[clamp(2.1rem,14vw,6rem)]" id="laptop-2">100% FAIP</h1>
+          <h1 className="text-[clamp(1.4rem,9.8vw,3.8rem)]" id="laptop">100% VOCÊ!</h1>
           <Image
             src="/selo-mec.webp"
             alt="Selo de 5 estrelas do MEC (Ministério da Educação)"
