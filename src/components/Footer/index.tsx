@@ -21,8 +21,8 @@ export default function Footer() {
               <Image
                 src="/unigrupofaef-logo.svg"
                 alt="Logo da UnigrupoFAEF de Marília/SP"
-                width={1}
-                height={1}
+                width={280}
+                height={60}
                 priority
               />
             </div>
