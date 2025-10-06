@@ -59,15 +59,15 @@ html {
   }
 
   #h1_2 {
-    font-size: 2rem;
+    font-size: 2.20rem;
   }
 
   #h2_1 {
-    font-size: 1.9rem;
+    font-size: 1.94rem;
   }
 
   #h2_2 {
-    font-size: 1.34rem;
+    font-size: 1.51rem;
   }
 
   #h3_60 {
@@ -79,7 +79,7 @@ html {
   }
 
   #h3_3 {
-    font-size: 0.99rem;
+    font-size: 1.1rem;
   }
 
   #button {
@@ -95,11 +95,11 @@ html {
   }
 
   #h1_1 {
-    font-size: 2.6rem;
+    font-size: 2.61rem;
   }
 
   #h1_2 {
-    font-size: 1.85rem;
+    font-size: 2.06rem;
   }
 
   #h2_1 {
@@ -107,7 +107,7 @@ html {
   }
 
   #h2_2 {
-    font-size: 1.26rem;
+    font-size: 1.39rem;
   }
 
   #h3_60 {
@@ -119,13 +119,13 @@ html {
   }
 
   #h3_3 {
-    font-size: 0.93rem;
+    font-size: 1.01rem;
   }
 
   #button {
     font-size: 1rem;
     height: 3rem;
-    width: 21rem;
+    width: 21.1rem;
   }
 }
 
@@ -178,19 +178,19 @@ html {
   }
 
   #h1_1 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   #h1_2 {
-    font-size: 1.14rem;
+    font-size: 1.6rem;
   }
 
   #h2_1 {
-    font-size: 1.13rem;
+    font-size: 1.4rem;
   }
 
   #h2_2 {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
 
   #h3_60 {
@@ -202,13 +202,14 @@ html {
   }
 
   #h3_3 {
-    font-size: 0.59rem;
+    font-size: 0.80rem;
   }
 
   #button {
     font-size: 0.73rem;
     height: 3rem;
     padding: 0 12px;
+    width: 81vw;
   }
 }
 
