@@ -9,7 +9,7 @@ interface GoogleTagManagerProps {
 export default function GoogleTagManager({ gtmId }: GoogleTagManagerProps) {
   return (
     <>
-      {/* Google Tag Manager Script */}
+
       <Script
         id="gtm-script"
         strategy="afterInteractive"

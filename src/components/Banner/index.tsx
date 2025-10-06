@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback } from "react";
 
 export default function Banner() {
@@ -44,53 +45,57 @@ export default function Banner() {
 
   return (
     <section className="relative w-full min-h-screen flex justify-center gap-[15%] items-center overflow-hidden flex-col-reverse xl:flex-row pt-18 xl:pt-0">
-      {/* Imagem de fundo */}
+
       <div className="absolute top-0 left-0 w-full h-full z-0">
-      <img
-        src="/banner-bg.webp"
-        className="w-full h-full absolute bottom-0 left-0 z-0 object-cover lg:object-contain"
-        alt=""
-      />
+        <Image
+          src="/banner-bg.webp"
+          className="w-full h-full absolute bottom-0 left-0 z-0 object-cover lg:object-fit"
+          height={1532}
+          width={982}
+          alt="Imagem de fundo do prédio da FAIP visão de cima"
+        />
       </div>
-        <div className=" w-7/8 xl:w-1/2 xl:h-screen flex flex-col sm:flex-row justify-center xl:justify-end z-10 gap-10 items-center">
-          {/* Imagem principal */}
-          <img
-                src="/banner.webp"
-                alt="FAIP"
-                className="h-4/5"
-              />
-        </div>
+      <div className=" w-7/8 xl:w-1/2 xl:h-screen flex flex-col sm:flex-row justify-center xl:justify-end z-10 gap-10 items-center">
 
-        <div className="w-7/8 xl:w-1/2 flex flex-col justify-center xl:justify-start sm:flex-row max-w-7xl z-10 gap-100">
-          {/* Conteúdo à direita */}
-          <div className="flex flex-col items-center text-center">
-            <img
-              src="/vest-faip.webp"
-              alt="FAIP"
-              className="w-full max-w-[32rem] mb-6"
-            />
+        <Image
+          src="/modelo.webp"
+          alt="Aluna da FAIP com seu diploma"
+          height={888}
+          width={556}
+          className="w-auto h-4/5"
+        />
+      </div>
 
-            {/* Texto Responsivo */}
-            <div className="w-full max-w-3xl font-bold flex flex-col justify-center  items-center text-center text-white mt-6">
-              <span className="text-[clamp(1rem,15.7vw,5.6rem)] leading-[1.1]">
-                Cursos 100%
-              </span>
-              <span className="text-[clamp(2rem,18vw,6.5rem)] leading-[1.1]">
-                Presenciais
-              </span>
-              <span className="text-[clamp(1.5rem,9.8vw,3.53rem)] leading-[1.1] mt-2">
-                Desde o 1° Semestre!
-              </span>
-            </div>
+      <div className="w-7/8 xl:w-1/2 flex flex-col justify-center xl:justify-start sm:flex-row max-w-7xl z-10 gap-100">
 
-            {/* Botão */}
-            <a href="#form" onClick={handleClick} className="mt-8 w-full flex justify-center">
-              <button className="bg-[#003000] mb-18 xl:mb-0 border-1 border-[#3AEE0D] text-white cursor-pointer rounded-[12px] h-12 w-full max-w-[500px] px-6 font-semibold shadow-xl shadow-green-500/40 backdrop-blur-xl transition-all duration-300 hover:bg-[#01832A] hover:text-white transform hover:-translate-y-1">
-                QUERO MINHA BOLSA!
-              </button>
-            </a>
+        <div className="flex flex-col items-center text-center">
+          <Image
+            src="/vest-faip.webp"
+            alt="Icone do vestibular da FAIP"
+            height={580}
+            width={279}
+            className="w-full max-w-[32rem] mb-6"
+          />
+
+          <div className="w-full max-w-3xl font-bold flex flex-col justify-center  items-center text-center text-white mt-6">
+            <span className="text-[clamp(1rem,15.7vw,5.6rem)] leading-[1.1]">
+              Cursos 100%
+            </span>
+            <span className="text-[clamp(2rem,18vw,6.5rem)] leading-[1.1]">
+              Presenciais
+            </span>
+            <span className="text-[clamp(1.5rem,9.8vw,3.53rem)] leading-[1.1] mt-2">
+              Desde o 1° Semestre!
+            </span>
           </div>
+
+          <a href="#form" onClick={handleClick} className="mt-8 w-full flex justify-center">
+            <button className="bg-[#003000] mb-18 xl:mb-0 border-1 border-[#3AEE0D] text-white cursor-pointer rounded-[12px] h-12 w-full max-w-[500px] px-6 font-semibold shadow-xl shadow-green-500/40 backdrop-blur-xl transition-all duration-300 hover:bg-[#01832A] hover:text-white transform hover:-translate-y-1">
+              QUERO MINHA BOLSA!
+            </button>
+          </a>
         </div>
+      </div>
     </section>
   );
 }
