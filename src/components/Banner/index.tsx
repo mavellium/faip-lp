@@ -78,13 +78,13 @@ export default function Banner() {
           />
 
           <div className="w-full max-w-3xl font-bold flex flex-col justify-center  items-center text-center text-white mt-6">
-            <span className="text-[clamp(1rem,15.7vw,5.6rem)] leading-[1.1]">
+            <span className="text-[clamp(1rem,15.7vw,5.6rem)] leading-[1.1]" id="titulo-1">
               Cursos 100%
             </span>
-            <span className="text-[clamp(2rem,18vw,6.5rem)] leading-[1.1]">
+            <span className="text-[clamp(2rem,18vw,6.5rem)] leading-[1.1]" id="titulo-2">
               Presenciais
             </span>
-            <span className="text-[clamp(1.5rem,9.8vw,3.53rem)] leading-[1.1] mt-2">
+            <span className="text-[clamp(1.5rem,9.8vw,3.53rem)] leading-[1.1] mt-2" id="titulo-3">
               Desde o 1° Semestre!
             </span>
           </div>
