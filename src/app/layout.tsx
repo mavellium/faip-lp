@@ -2,25 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import GoogleTagManager from "../components/GoogleTagManager"; // cuidado com o nome do arquivo!
 import "./globals.css";
-import { Inter, Montserrat, Poppins, Dancing_Script, Fraunces, Pathway_Extreme, League_Spartan } from "next/font/google";
+import {Poppins,League_Spartan } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-poppins" });
-const dancing = Dancing_Script({ subsets: ["latin"], variable: "--font-dancing" });
-const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-fraunces" });
-const pathway = Pathway_Extreme({ subsets: ["latin"], variable: "--font-pathway" });
 const league = League_Spartan({ subsets: ["latin"], variable: "--font-league" });
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -36,14 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`
-          ${geistSans.variable} 
-          ${geistMono.variable} 
-          ${inter.variable} 
-          ${montserrat.variable} 
           ${poppins.variable} 
-          ${dancing.variable} 
-          ${fraunces.variable} 
-          ${pathway.variable}
           ${league.variable} 
           antialiased
         `}
