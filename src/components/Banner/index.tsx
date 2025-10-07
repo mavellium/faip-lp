@@ -48,10 +48,10 @@ export default function Banner() {
 
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <Image
-          src="/banner1.webp"
+          src="/BANNER_BG_PC.avif"
           className="w-full h-full"
-          width={1512}
-          height={982}
+          width={1920}
+          height={1080}
           alt="Imagem de fundo do prédio da FAIP visão de cima"
         />
       </div>

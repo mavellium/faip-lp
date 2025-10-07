@@ -39,11 +39,11 @@ export default function Form() {
     >
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <Image
-          src="/faip-bg1.webp"
+          src="/FORM_BG_PC.avif"
           alt="Imagem de fundo da página mostrando o prédio da FAIP"
           className="w-full h-full"
-          width={1512}
-          height={982}
+          width={1980}
+          height={1080}
         />
       </div>
 
