@@ -8,7 +8,7 @@ export default function Banner() {
 
   // Detecta se é mobile para trocar a imagem de fundo
   useEffect(() => {
-    const checkWidth = () => setIsMobile(window.innerWidth < 768);
+    const checkWidth = () => setIsMobile(window.innerWidth < 1280);
     checkWidth();
     window.addEventListener("resize", checkWidth);
     return () => window.removeEventListener("resize", checkWidth);
