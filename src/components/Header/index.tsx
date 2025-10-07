@@ -54,7 +54,7 @@ export default function Header() {
   }, []);
 
   return (
-    <section className="relative w-full h-screen xl:h-[50em] flex flex-col xl:justify-start justify-center items-center xl:items-start overflow-hidden">
+    <section className="relative w-full h-screen flex flex-col xl:justify-start justify-center items-center xl:items-start overflow-hidden">
 
   {isMobile ? (
     <video
