@@ -40,6 +40,11 @@ export default function Form() {
       scriptSrc.src =
         "https://forms.kommo.com/forms/assets/js/amoforms.js?1758651212";
 
+      scriptSrc.onload = () => {
+        const loader = document.getElementById("form-loader");
+        if (loader) loader.style.display = "none";
+      };
+
       formContainer.appendChild(scriptInline);
       formContainer.appendChild(scriptSrc);
     };
@@ -109,6 +114,12 @@ export default function Form() {
         id="section-2-form"
         className="flex justify-center xl:justify-start z-10 w-full xl:w-1/2 xl:pl-15 min-h-[400px] items-center"
       >
+        <div
+          id="form-loader"
+          className="absolute text-white text-lg font-semibold animate-pulse"
+        >
+          Carregando formulário...
+        </div>
         <noscript>Ative o JavaScript para visualizar o formulário.</noscript>
       </div>
     </section>
