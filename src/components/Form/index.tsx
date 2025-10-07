@@ -17,27 +17,53 @@ export default function Form() {
     const formContainer = document.getElementById("section-2-form");
     if (!formContainer) return;
 
+    let scriptLoaded = false;
+
+    // Função que injeta o script
+    const loadKommoForm = () => {
+      if (scriptLoaded) return;
+      scriptLoaded = true;
+
+      const scriptInline = document.createElement("script");
+      scriptInline.defer = true;
+      scriptInline.textContent = `
+        !function(a,m,o,c,r,m){
+          a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},
+          a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},
+          a[o+r]({id:"1555567",hash:"499f2d47ec2957e6d203463ce10956e2",locale:"pt"}),
+          a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}
+        }(window,0,"amo_forms_","params","load","loaded");
+      `;
+
+      const scriptSrc = document.createElement("script");
+      scriptSrc.async = true;
+      scriptSrc.src =
+        "https://forms.kommo.com/forms/assets/js/amoforms.js?1758651212";
+
+      formContainer.appendChild(scriptInline);
+      formContainer.appendChild(scriptSrc);
+    };
+
+    // 1️⃣ Pré-carrega o script 1 segundo após o primeiro paint (sem bloquear)
+    const preload = setTimeout(loadKommoForm, 1000);
+
+    // 2️⃣ Fallback: se o usuário rolar rápido e o script ainda não carregou
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const scriptInline = document.createElement("script");
-          scriptInline.defer = true;
-          scriptInline.textContent = `
-            !function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"1555567",hash:"499f2d47ec2957e6d203463ce10956e2",locale:"pt"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");
-          `;
-          const scriptSrc = document.createElement("script");
-          scriptSrc.async = true;
-          scriptSrc.src =
-            "https://forms.kommo.com/forms/assets/js/amoforms.js?1758651212";
-          formContainer.appendChild(scriptInline);
-          formContainer.appendChild(scriptSrc);
+          loadKommoForm();
           observer.unobserve(formContainer);
         }
       });
     });
 
     observer.observe(formContainer);
-    return () => observer.disconnect();
+
+    // Limpeza
+    return () => {
+      clearTimeout(preload);
+      observer.disconnect();
+    };
   }, []);
 
   return (
@@ -79,14 +105,11 @@ export default function Form() {
         </div>
       </div>
 
-      {/* Formulário */}
       <div
         id="section-2-form"
-        className="flex justify-center xl:justify-start z-10 w-full xl:w-1/2 xl:pl-15"
+        className="flex justify-center xl:justify-start z-10 w-full xl:w-1/2 xl:pl-15 min-h-[400px] items-center"
       >
-        <noscript>
-          Para visualizar o formulário, ative o JavaScript no seu navegador.
-        </noscript>
+        <noscript>Ative o JavaScript para visualizar o formulário.</noscript>
       </div>
     </section>
   );
