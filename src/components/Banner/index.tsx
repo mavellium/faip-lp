@@ -103,7 +103,7 @@ export default function Banner() {
           </div>
 
           <a href="#form" onClick={handleClick} className="mt-8 w-full flex justify-center">
-            <button className="bg-[#003000] mb-18 xl:mb-0 border-1 border-[#3AEE0D] text-white cursor-pointer rounded-[12px] h-12 w-full max-w-[500px] px-6 font-semibold shadow-xl shadow-green-500/40 backdrop-blur-xl transition-all duration-300 hover:bg-[#01832A] hover:text-white transform hover:-translate-y-1">
+            <button className="bg-[#003000] mb-18 xl:mb-0 border-1 border-[#3AEE0D] text-white cursor-pointer rounded-[12px] h-15 w-full max-w-[500px] px-6 font-semibold shadow-xl shadow-green-500/40 backdrop-blur-xl transition-all duration-300 hover:bg-[#01832A] hover:text-white transform hover:-translate-y-1 text-[1.3rem] lg:text-[1.8rem]">
               QUERO MINHA BOLSA!
             </button>
           </a>
