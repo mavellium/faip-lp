@@ -33,7 +33,6 @@ html {
   background: var(--gradient-whatsapp);
 }
 
-
 @media screen and (max-width: 1279px) {
   .degrade {
     background: rgba(0, 104, 0, 0.6) !important;

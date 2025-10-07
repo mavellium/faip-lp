@@ -48,10 +48,10 @@ export default function Banner() {
 
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <Image
-          src="/banner-bg.webp"
-          className="w-full h-full absolute bottom-0 left-0 z-0 object-cover lg:object-fit"
-          height={1532}
-          width={982}
+          src="/banner1.webp"
+          className="w-full h-full"
+          width={1512}
+          height={982}
           alt="Imagem de fundo do prédio da FAIP visão de cima"
         />
       </div>
