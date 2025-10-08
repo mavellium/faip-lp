@@ -88,7 +88,7 @@ export default function Form() {
       </div>
 
       {/* Texto e selo */}
-      <div className="w-full xl:w-1/2 xl:h-screen z-10 flex justify-center xl:justify-end items-center">
+      <div className="w-full xl:w-1/2 xl:h-screen z-10 flex justify-center xl:justify-end items-center" id="section-2-text">
         <div className="font-bold text-white flex flex-col items-center w-auto">
           <h1 className="text-[clamp(1.4rem,9vw,3.8rem)] xl:text-[clamp(2.025rem,2.83vw,4em)]">
             100% PRESENCIAL
