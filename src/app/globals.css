@@ -328,10 +328,6 @@ html {
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1640px) {
-  #section-2-form {
-    padding-right: 100px;
-    padding-left: 40px;
-  }
 
   #section-2-text {
     padding-right: 50px;
@@ -344,25 +340,183 @@ html {
   }
 
   #section-2-form {
-    padding-left: 30px;
+    padding-left: 15px;
     padding-right: 100px;
   }
 }
 
-@media screen and (min-width: 2010px) and (max-width: 2560px) {
+
+@media screen and (min-width: 1724px) and (max-width: 2070px) {
   #section-2-form {
-    padding-left: 30px;
+    padding-left: 1vw !important;
   }
 }
 
-@media screen and (min-width: 3000px){
+@media screen and (min-width: 2070px) and (max-width: 2800px) {
   #section-2-form {
-    padding-left: 5%;
+    padding-left: 1.5vw;
   }
 }
 
-@media screen and (min-width: 3400px){
+@media screen and (min-width: 2801px) and (max-width: 3000px) {
   #section-2-form {
-    padding-left: 10%;
+    padding-left: 4.5vw;
+  }
+}
+
+
+@media screen and (min-width: 3100px) and (max-width: 3150px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 5.5vw;
+  }
+}
+
+@media screen and (min-width: 3150px) and (max-width: 3200px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 6.6vw;
+  }
+}
+
+@media screen and (min-width: 3200px) and (max-width: 3210px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 6.7vw;
+  }
+}
+
+@media screen and (min-width: 3210px) and (max-width: 3230px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 7vw;
+  }
+}
+
+@media screen and (min-width: 3230px) and (max-width: 3250px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 7.2vw;
+  }
+}
+
+@media screen and (min-width: 3250px) and (max-width: 3270px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 7.5vw;
+  }
+}
+
+@media screen and (min-width: 3270px) and (max-width: 3280px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 7.7vw;
+  }
+}
+
+@media screen and (min-width: 3280px) and (max-width: 3315px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 8vw;
+  }
+}
+
+@media screen and (min-width: 3315px) and (max-width: 3355px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 8.5vw;
+  }
+}
+
+@media screen and (min-width: 3355px) and (max-width: 3365px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 8.5vw;
+  }
+}
+
+@media screen and (min-width: 3365px) and (max-width: 3385px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 8.8vw;
+  }
+}
+
+@media screen and (min-width: 3385px) and (max-width: 3400px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 9vw;
+  }
+}
+
+@media screen and (min-width: 3400px) and (max-width: 3420px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 9.3vw;
+  }
+}
+
+@media screen and (min-width: 3420px) and (max-width: 3440px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 9.5vw;
+  }
+}
+
+@media screen and (min-width: 3440px) and (max-width: 3480px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 9.7vw;
+  }
+}
+
+@media screen and (min-width: 3480px) and (max-width: 3500px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 10vw;
+  }
+}
+
+@media screen and (min-width: 3500px) and (max-width: 3520px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 10.5vw;
+  }
+}
+
+@media screen and (min-width: 3520px) and (max-width: 3540px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 10.7vw;
+  }
+}
+
+@media screen and (min-width: 3540px) and (max-width: 3580px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 11vw;
+  }
+}
+
+@media screen and (min-width: 3580px) and (max-width: 3620px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 11.5vw;
+  }
+}
+
+@media screen and (min-width: 3620px) and (max-width: 3640px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 11.7vw;
+  }
+}
+
+@media screen and (min-width: 3640px) and (max-width: 3700px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 12vw;
+  }
+}
+
+@media screen and (min-width: 3700px) and (max-width: 3750px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 12.3vw;
+  }
+}
+
+@media screen and (min-width: 3700px) and (max-width: 3750px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 12.3vw;
+  }
+}
+
+@media screen and (min-width: 3750px) and (max-width: 3800px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 12.5vw;
+  }
+}
+
+@media screen and (min-width: 3800px) and (max-width: 3850px) and (max-height: 900px) {
+  #section-2-form {
+    padding-left: 12.7vw;
   }
 }
